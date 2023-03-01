@@ -1,36 +1,39 @@
 import React, { useState } from "react";
-import Expenseitem from "./components/Expenseitem.js";
 import Expenses from "./components/Expenses.js";
 
 
 function App() {
 
   const expenses = [
-    { 
-      title: 'Car insurense', 
-      amount: 294.67, 
-      date: new Date(2023, 2, 28) 
+    {
+      id: 'e1',
+      title: 'Toilet Paper',
+      amount: 94.12,
+      date: new Date(2020, 7, 14),
     },
     { 
-      title: 'TV', 
-      amount: 150, 
-      date: new Date(2022, 12, 15) 
+      id: 'e2', 
+      title: 'New TV',
+      amount: 799.49,
+      date: new Date(2021, 2, 12) 
     },
-    { 
-      title: 'AK',
-      amount: 250, 
-      date: new Date(2023, 1, 9) 
+    {
+      id: 'e3',
+      title: 'Car Insurance',
+      amount: 294.67,
+      date: new Date(2021, 2, 28),
     },
-    { 
-      title: 'Nmap', 
-      amount: 20, 
-      date: new Date(2022, 2, 28) 
-    }
+    {
+      id: 'e4',
+      title: 'New Desk (Wooden)',
+      amount: 450,
+      date: new Date(2021, 5, 12),
+    },
   ];
 
   return (
     <div className="App">
-      <h2>A KAK?!</h2>
+      <h2>Намана</h2>
       <Expenses items={expenses} />
     </div>
   );
