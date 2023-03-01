@@ -1,11 +1,11 @@
+import ExpanseDate from './ExpanseDate';
 import './Expenseitem.css';
 
-function Expenseitem(props)
-{
-
+function Expenseitem(props) {
+    
     return (
     <div className='expense-item'>
-        <div>{props.date.toISOString()}</div>
+        <ExpanseDate date={props.date}/>
         <div className='expense-item__description'>
             <h2>{props.title}</h2>
             <div className='expense-item__price'>${props.ammount}</div>

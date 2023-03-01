@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
 import Expenseitem from "./components/Expenseitem.js";
+
 
 function App() {
 
@@ -14,10 +14,10 @@ function App() {
   return (
     <div className="App">
       <h2>Strujachim!</h2>
-      <Expenseitem title={expenses[0].title} ammount={expenses[0].amount} date={expenses[0].date}></Expenseitem>
-      <Expenseitem title={expenses[1].title} ammount={expenses[1].amount} date={expenses[1].date}></Expenseitem>
-      <Expenseitem title={expenses[2].title} ammount={expenses[2].amount} date={expenses[2].date}></Expenseitem>
-      <Expenseitem title={expenses[3].title} ammount={expenses[3].amount} date={expenses[3].date}></Expenseitem>
+      <Expenseitem title={expenses[0].title} ammount={expenses[0].amount} date={expenses[0].date} />
+      <Expenseitem title={expenses[1].title} ammount={expenses[1].amount} date={expenses[1].date} />
+      <Expenseitem title={expenses[2].title} ammount={expenses[2].amount} date={expenses[2].date} />
+      <Expenseitem title={expenses[3].title} ammount={expenses[3].amount} date={expenses[3].date} />
     </div>
   );
 }
