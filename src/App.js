@@ -5,7 +5,7 @@ import NewExpense from "./components/NewExpense/NewExpense.js";
 
 function App() {
 
-  const expenses = [
+  const DUMMY_EXPENSES = [
     {
       id: 'e1',
       title: 'Toilet Paper',
@@ -31,6 +31,14 @@ function App() {
       date: new Date(2023, 1, 12),
     },
   ];
+
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+
+  const addExpenseHandler = (expense) => {
+    setExpenses((prevExpenses) => {
+      return [expense, ...prevExpenses]
+    });
+  }
 
   return (
     <div className="App">
