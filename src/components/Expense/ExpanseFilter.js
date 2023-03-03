@@ -3,8 +3,11 @@ import React from 'react';
 import './ExpanseFilter.css'
 
 const ExpensesFilter = (props) => {
+
     const dropdownChangeHandler = (event) => {
         props.onChangeFilter(event.target.value);
+
+        console.log(props.onChangeFilter(event.target.value));
     };
 
   return (
